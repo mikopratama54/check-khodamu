@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cek Khodam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 data-aos="fade-down" data-aos-duration="3000">Test Khodam</h1>
+    <form
+      onsubmit="return checkKhodam(event)"
+      data-aos="fade-down"
+      data-aos-duration="3000"
+    >
+      <p>Masukkan Nama Kamu</p>
+      <input type="text" id="nama" placeholder="Masukkan nama Kamu" required />
+      <button type="submit">Cek Khodam</button>
+      <div id="message"></div>
+    </form>
+    <div class="footer">
+      Design &copy; 2024 by
+      <span style="color: rgba(116, 182, 218, 0.8)">Angga yulian Saputra</span>
+    </div>
+    <div class="loading">
+      <img src="./img/loading.png" alt="Loading..." class="loading-image" />
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
